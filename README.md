@@ -1,5 +1,3 @@
-# Neuen, deutlich ausführlicheren Markdown-Text mit noch mehr Details pro Abschnitt vorbereiten
-more_detailed_markdown = """
 # 📚 Vollständige und Ausführliche Zusammenfassung: Backup & Restore Lernziele
 
 ---
