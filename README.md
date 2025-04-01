@@ -1,3 +1,4 @@
+
 # 📚 Vollständige und Ausführliche Zusammenfassung: Backup & Restore Lernziele
 
 ---
@@ -145,3 +146,43 @@ Enthält:
 ### Archivieren:
 ```bash
 tar -cvf backup.tar /pfad/zur/datei
+```
+
+### Entpacken:
+```bash
+tar -xvf backup.tar
+```
+
+### Komprimiert:
+```bash
+tar -czvf backup.tar.gz /pfad
+```
+
+| Schalter | Funktion |
+|----------|----------|
+| -c | Archiv erstellen |
+| -x | Archiv entpacken |
+| -v | Ausgabe der Dateien (verbose) |
+| -f | Dateiname angeben |
+| -z | Gzip-Komprimierung |
+
+---
+
+## 11. Robocopy & Archivbit
+
+### Robocopy Beispiele:
+```bash
+robocopy Quelle Ziel /A /E
+robocopy Quelle Ziel /M /S
+```
+
+| Schalter | Bedeutung |
+|----------|-----------|
+| /A | Kopiert Dateien mit gesetztem Archivbit |
+| /M | Kopiert Dateien und entfernt das Archivbit |
+| /E | Kopiert alle Unterverzeichnisse inkl. leerer |
+| /S | Kopiert Unterverzeichnisse außer leerer |
+
+### Archivbit
+- Wird gesetzt, wenn eine Datei verändert wurde
+- Dient als Indikator für inkrementelle/differenzielle Sicherung
